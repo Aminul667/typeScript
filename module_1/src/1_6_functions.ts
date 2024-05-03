@@ -1,5 +1,6 @@
 // Normal Function
 
+{
 function add(num1: number, num2: number = 10): number {
   return num1 + num2;
 }
@@ -24,3 +25,5 @@ const arr: number[] = [1, 2, 3, 4, 5];
 const squareArr: number[] = arr.map(
   (element: number): number => element * element
 );
+
+}
