@@ -9,14 +9,19 @@
   const boolArray: Array<boolean> = [true, false, true];
 
   // generic type
-  type GenericArray<T> = Array<T>;
-
   const rollNumberGeneric: GenericArray<number> = [1, 2, 3];
   const mentorsGeneric: GenericArray<string> = ["X", "Y", "Z"];
   const boolArrayGeneric: GenericArray<boolean> = [true, false, true];
 
+  type GenericArray<T> = Array<T>;
+
+  interface User {
+    name: string;
+    age: number;
+  }
+
   //   array of generic object
-  const user: GenericArray<{ name: string; age: number }> = [
+  const user: GenericArray<User> = [
     {
       name: "X",
       age: 30,
